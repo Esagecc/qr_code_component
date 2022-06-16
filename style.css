@@ -26,10 +26,13 @@ body {
 .card {
     background-color: var(--white);
     width: 90%;
+    height: 525px;
     border-radius: 20px;
     margin: 0 auto;
     text-align: center;
     padding-top: 20px;
+    -webkit-box-shadow: 11px 8px 21px -5px rgba(0,0,0,0.6); 
+    box-shadow: 11px 8px 21px -5px rgba(0,0,0,0.6);
 }
 
 .qr-code {
@@ -68,3 +71,8 @@ h1 {
     color: hsl(228, 45%, 44%); 
 }
 
+@media (min-width: 500px) {
+    .card {
+        width: 340px;
+    }
+}
